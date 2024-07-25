@@ -147,9 +147,9 @@ swiper-container{
 .videobg::after {
     content: '';
     inset: 0;
-    background: #1F455B 100%;
+    background: linear-gradient(0deg, #1F455B 0%, #1F455B 100%);
     background-repeat: no-repeat;
-    opacity: 60%;
+    opacity: 80%;
     background-size: 100%;
     background-position: bottom;
     position: absolute;
