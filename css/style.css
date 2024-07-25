@@ -380,7 +380,7 @@ swiper-container{
         top: 400px;
     }
     .aboutinfos .vetor1{
-        right: -50px;
+        right: -20px;
     }
     .about{
         padding: 80px 0px 100px;
@@ -780,7 +780,8 @@ swiper-container{
 }
 .formp img{
     color: #fff;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     margin: auto;
     z-index: 99;
 }
