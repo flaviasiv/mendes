@@ -95,13 +95,31 @@ swiper-container{
     line-height: 150%;
     max-width: 505px;
 }
+@media screen and (max-width:990px) {
+    .videop{
+        justify-content: center;
+        gap: 32px;
+        flex-direction: column;
+        text-align: center;
+        padding: 115px 20px;
+    }
+    .videoinfo{
+        gap: 32px;
+    }
+    .videoinfo p{
+        font-size: 24px;
+    }    
+    .videoinfo button{
+        margin: auto;
+    }
+}
 .videoimg {
     display: block;
     width: 100%;
     object-fit: cover;
-    height: 960px;
+    height: 900px;
 }
-/* .videdobg::after {
+.videobg::after {
     content: '';
     inset: 0;
     background: #1F455B 100%;
@@ -110,7 +128,8 @@ swiper-container{
     background-size: 100%;
     background-position: bottom;
     position: absolute;
-} */
+    top: -1px;
+}
 .servicestitle{
     position: absolute;
     display: flex;
@@ -120,7 +139,7 @@ swiper-container{
     width: 100%;
     max-width: 900px;
     margin: auto;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -133,9 +152,9 @@ swiper-container{
     flex-direction: column;
     gap: 32px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -194,23 +213,23 @@ swiper-container{
     color: #1F455B
 }
 .btnservice{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 190px;
-  list-style: none;
-  color: #1F455B;
-  border-radius: 100px;
-  padding: 16px 0;
-  background-color: #46E5D8;
-  cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 190px;
+    list-style: none;
+    color: #1F455B;
+    border-radius: 100px;
+    padding: 16px 0;
+    background-color: #46E5D8;
+    cursor: pointer;
     font-size: 16px;
     font-weight: 600;
     line-height: 80%;
-  text-decoration: none;
-  gap: 5px;
-  border: 1px solid #1F455B;
+    text-decoration: none;
+    gap: 5px;
+    border: 1px solid #1F455B;
 }
 .btncardserv svg{
     fill: #1F455B;
@@ -235,97 +254,13 @@ swiper-container{
     line-height: 140%; 
 }
 @media screen and (max-width:990px) {
-    .servicestitle{
-        padding: 70px 10px 50px 10px;
-    }
-    .servicestitle img{
-        max-width: 200px;
-    }
     .servicestitle h2{
-        font-size: 36px;
-        max-width: 280px;
+        font-size: 40px;
+        max-width: 330px;
         margin: auto;
     }
     .servicestitle p{
         max-width: 290px;
-    }
-}
-.preferencetitle{
-    width: 100%;
-    max-width: 642px;
-    padding: 0 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    text-align: center;
-    margin: auto;
-}
-.preferencetitle p{
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 150%;
-}
-.preferencegrid, .gallerygrid{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 900px;
-    margin: auto;
-    padding: 50px 0;
-}
-.preferencecard{
-    display: flex;
-    width: 395px;
-    height: 124px;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 24px;
-    background: #265083;
-    padding: 24px;
-    gap: 24px;
-    justify-content: center;
-}
-.preferencecard svg{
-    stroke: #fff;
-    fill: #EEEEEE
-}
-.preferencecard:hover{
-    background: #fff;
-    color: #265083;
-}
-.preferencecard:hover svg{
-    stroke: #265083;
-    fill: #265083
-}
-.preferencecard:hover svg path{
-    stroke: #265083;
-    fill: #265083
-}
-.preferencecard h3{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 140%;
-}
-@media screen and (max-width:830px) {
-    .videoimg {
-        display: block;
-        object-fit: cover;
-        height: 1000px;
-    }
-    .logopref{
-        padding-top: 80px;
-        width: 200px;
-        margin: auto
-    }
-    .preferencetitle{
-        max-width: 427px;
-    }
-    .preferencecard{
-        max-width: 360px;
-        margin: auto;
-    }
-    .preferencecard h3{
-        font-size: 22px;
     }
 }
 .aboutcontainer{
@@ -339,19 +274,24 @@ swiper-container{
     justify-content: space-between;
     align-items: center;
 }
-.aboutimg{
+.aboutimg, .prefeimg{
     float: right;
     width: 100%;
     max-width: 720px;
     height:100%;
-    margin-bottom: -2px;
+    margin-bottom: -3px;
 }
 .aboutinfos{
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 24px;
     max-width: 664px;
     margin: auto;
+}
+.aboutinfos .vetor1s{
+    left: -90px;
+    top: 400px;
 }
 .aboutinfos small{
     font-family: 'Urbanist';
@@ -371,24 +311,62 @@ swiper-container{
     font-weight: 300;
     line-height: 130%;
 }
-@media screen and (max-width:990px) {
-    .about{
-        padding: 0px 10px;
-        flex-direction: column;
+@media screen and (max-width:1290px) {
+    .aboutimg img{
+        float: right;
+        width: 520px;
+        height:500px;
     }
-    .aboutimg{
-        position: absolute;
-        top: 120px;
-        width: 100%;
-        max-width:402px;
-        padding: 0px 10px;
+    .aboutinfos{
+        max-width: 564px;
+        padding-left: 80px;
+    }
+    .aboutinfos .vetor1s{
+        left: 30px;
+        top: 350px;
+    }
+    .aboutinfos .vetor1{
+        right: -90px;
+    }
+    .aboutinfos h2{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:990px) {
+    .aboutinfos .vetor1s{
+        left: -30px;
+        top: 350px;
+    }
+    .aboutinfos .vetor1{
+        right: -50px;
+    }
+    .about{
+        padding: 80px 0px 100px;
+        flex-direction: column;
+        gap: 90px;
+    }
+    .aboutinfos{
+        max-width: 302px;
+        padding-left: 0px;
+    }
+    .aboutinfos small{
+        text-align: center;
+    }
+    .aboutinfos h2{
+        font-size: 40px;
+        max-width: 270px;
         margin: auto;
     }
-    .abouttitle{
-        display: flex;
-        flex-direction: column;
-        margin-top: 420px;
-        padding: 0 10px;
+    .aboutinfos p{
+        max-width:290px;
+        text-align: center;
+    }
+    .aboutimg{float: none;}
+    .aboutimg img{
+        float: none;
+        width: 100%;
+        max-width: 920px;
+        height:100%;
     }
 }
 .preferencecontainer{
@@ -435,18 +413,93 @@ swiper-container{
     font-weight: 400;
     line-height: 140%
 }
+.prefeimgm{display: none;}
+@media screen and (max-width:1290px) {
+    .prefeimg img{
+        width: 590px;
+        height:590px;
+    }
+    .prefeinfo{
+        padding-right: 80px;
+        gap: 24px;
+    }
+    .preference{
+        gap: 24px;
+    }
+}
+@media screen and (max-width:990px) {
+    .prefeimgw{display: none;}
+    .preferencecontainer{
+        flex-direction: column;
+    }
+    .prefeinfo, .preference{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        max-width: 390px;
+        margin: auto;
+    }
+    .prefeinfo{
+        padding: 100px 10px;
+    }
+    .preference{
+        text-align: center;
+    }
+    .prefegrid{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .preference h2{
+        font-size: 40px;
+        
+    }
+    .preference p{
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+    .prefecard{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 0px 12px 25px;
+        border-radius: 100px;
+        border: 1px solid var(--Color-Brand-secondary, #1F455B);
+    }
+    .prefecard svg{max-width: 40px;}
+    .prefecard h3{
+        font-size: 14px;
+    }    
+    .prefeimgm{
+        display: block;
+    }
+    .prefeimg{float: none;}
+    .prefeimg img{
+        float: none;
+        width: 100%;
+        max-width: 920px;
+        height:100%;
+    }
+}
 .portifoliocontainer{
-    background-image: url(../assets/23.png);
+    position: relative;
+    /* background-image: url(../assets/23.png);
     background-repeat: no-repeat;
     background-position: 100%;
-    background-size: cover;
-    padding: 120px 0;
+    background-size: cover; */
+    padding: 0px 0;
+    justify-content: center;
+    align-items: center;
+}
+.portifoliocontainer .videoimg{
+    height: 1100px;
 }
 .portfoliotitle{
-    position: relative;
-    top: 0%;
-    left: 0%;
-    transform: translate(0);
+    position: absolute;
+    z-index: 99;
+    top: 20%;
 }
 .portfoliotitle h2{
     max-width: 560px;
@@ -457,30 +510,96 @@ swiper-container{
     margin: auto;
 }
 .portfoliogrid{
+    position: absolute;
     display: flex;
     gap: 32px;
     justify-content: center;
+    max-width: 1400px;
+    margin: auto;
     padding: 80px 0;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .bigimg img{
     width: 100%;
-    max-width: 640px;
+    width: 640px;
 }
 .smallimg{
     display: flex;
     flex-wrap: wrap;
-    max-width: 640px;
+    width: 640px;
     gap: 32px;
 }
 .smallimg img{
     width: 100%;
-    max-width: 304px;
+    width: 304px;
 }
 .portifoliocontainer .btnservice{
+    position: absolute;
     margin: auto;
 }
-
-
+.portfoliogridm{display: none;}
+@media screen and (max-width:1290px) {
+    .portfoliogrid{
+        gap: 32px;
+        justify-content: center;
+        padding: 80px 50px;
+    }
+    .bigimg img{
+        width: 100%;
+        width: 562px;
+        object-fit: cover;
+    }
+    .smallimg{
+        display: flex;
+        flex-wrap: wrap;
+        width: 562px;
+        gap: 32px;
+    }
+    .smallimg img{
+        width: 100%;
+        width: 264px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:1190px) {
+    .portifoliocontainer .videoimg{
+        height: 750px;
+    }
+    .portfoliotitle{
+        max-width: 400px;
+        padding: 50px 10px 0;
+    }
+    .portfoliotitle p{
+        max-width: 288px;
+        margin: auto;
+    }
+    .portfoliogridm{display: block; padding: 80px 0px;}
+    .portfoliogridw{display: none;}
+    .portfoliogrid{
+        width: 100%;
+    }
+    .mySwiper2 {
+      width: 100%;
+      max-width: 2000px;
+      cursor: grab;
+      margin: 0 auto !important;
+    }
+    .swiper2 {
+      width: 100%;
+      max-width: 310px;
+      height: 100%;
+      margin: auto;
+    }
+    .swiper2 img {
+      width: 100% !important;
+      max-width: 300px;
+      margin: auto;
+      object-fit: cover !important;
+      border-radius: 24px;
+    }
+}
 .reviewcontainer{
     padding: 120px 0;
     background-color: #1F455B;
@@ -584,6 +703,7 @@ swiper-container{
     text-align: center;
     align-items: center;
     width: 100%;
+    max-width: 300px;
     margin: auto;
     gap: 48px;
 }
@@ -611,10 +731,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width:680px;
-    max-width: 100%;
-    margin: auto;
-    height: 559px;
+    width:520px;
     background-color: #FFF;
     border-radius: 24px;
     padding: 32px;
@@ -654,13 +771,13 @@ form button{
     font-size: 16px;
     font-weight: 600;
     margin-top: 15px;
-    border:1px solid #1F455B
+    border:1px solid #0B2749
 }
 #form input:focus, #form textarea:focus{
     outline: 1px solid #fff;     /* oranges! yey */
 }
 @media screen and (max-width:980px) {
-    .formp{
+    .form{
         flex-direction: column;
         padding: 0;
     }
@@ -668,12 +785,21 @@ form button{
         width: 270px;    
         font-size: 36px;
     }
+    form{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        max-width:520px;
+        margin-bottom: 90px;
+    }
+    .formp{
+        margin-bottom: 600px;
+    }
     .formgrid{
     padding: 100px 10px;
     background: url(../assets/formbg-m.png) no-repeat;
-    background-size: 135%;
+    background-size: 200%;
     background-position-y: top;
-    background-position-x: right;
 }
 }
 .mapscontainer{
@@ -788,6 +914,9 @@ line-height: 150%;
     }
     .mapinfo ul li p{
     font-size: 14px;
+    }
+    .listareas{
+        padding: 0 10px;
     }
 }
 .popuptest{

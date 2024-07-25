@@ -42,7 +42,6 @@ header {
     max-width: 9999px;
     margin: auto;
     background: linear-gradient(263deg, #27847C 0%, #1F455B 99.33%);
-    backdrop-filter: blur(10px);
     padding: 0 50px 0 50px;
     height: 80px;
     scroll-behavior: smooth;
@@ -59,7 +58,7 @@ header {
     justify-content: space-between;
     width: 100%;
     max-width: 1300px;
-    padding: 0 50px;
+    padding: 0;
     margin: auto;
     align-items: center;  
 }
