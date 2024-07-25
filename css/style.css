@@ -117,6 +117,9 @@ swiper-container{
     gap: 5px;
     border: 1px solid #1F455B;
 }
+.btn1{
+    background: linear-gradient(90deg, #8E8E8E 0%, #fff 50%, #fff 100%);
+}
 .btncardserv svg{
     fill: #1F455B;
 }
@@ -295,7 +298,8 @@ swiper-container{
 .about{
     display: flex;
     width: 100%;
-    max-width: 9999px;
+    max-width: 1499px;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -1040,7 +1044,7 @@ a{
 background-color: #46E5D8;
 }
 .btn1:hover{
-    background-color: #FFF;
+    background: #46E5D8;
 }
 .callpopup:hover{
     background: #FFF;
