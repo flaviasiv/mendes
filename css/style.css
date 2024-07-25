@@ -140,6 +140,11 @@ swiper-container{
     .videoinfo button{
         margin: auto;
     }
+    .vetor1s{
+        position: absolute;
+        top: 560px;
+        left: 50px;
+    }
 }
 .videoimg {
     display: block;
@@ -295,20 +300,32 @@ swiper-container{
     background: #1F455B;
     height: auto;
 }
-.about{
+.aboutdiv{
     display: flex;
-    width: 100%;
-    max-width: 1499px;
-    margin: auto;
-    justify-content: space-between;
+    position: relative;
+    justify-content: center;
     align-items: center;
-}
-.aboutimg, .prefeimg{
-    float: right;
     width: 100%;
-    max-width: 720px;
-    height:100%;
+    max-width: 9999px;
+    margin: auto;
+}
+.about{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 100px 0;
+}
+.aboutimgw{
+    height: 100%;
+    max-height: 800px;
+    right: 0;
     margin-bottom: -3px;
+}
+.aboutimgw img{
+    height: 100%;
+    max-height: 600px;
+    width: 50vw;
+    object-fit: cover;
 }
 .aboutinfos{
     position: relative;
@@ -340,22 +357,18 @@ swiper-container{
     font-weight: 300;
     line-height: 130%;
 }
+.aboutimgm{display:none;}
 @media screen and (max-width:1290px) {
-    .aboutimg img{
-        float: right;
-        width: 520px;
-        height:500px;
-    }
     .aboutinfos{
         max-width: 564px;
         padding-left: 80px;
     }
     .aboutinfos .vetor1s{
-        left: 30px;
-        top: 350px;
+        left: 0px;
+        top: 400px;
     }
     .aboutinfos .vetor1{
-        right: -90px;
+        right: 30px;
     }
     .aboutinfos h2{
         font-size: 50px;
@@ -364,7 +377,7 @@ swiper-container{
 @media screen and (max-width:990px) {
     .aboutinfos .vetor1s{
         left: -30px;
-        top: 350px;
+        top: 400px;
     }
     .aboutinfos .vetor1{
         right: -50px;
@@ -390,13 +403,29 @@ swiper-container{
         max-width:290px;
         text-align: center;
     }
-    .aboutimg{float: none;}
-    .aboutimg img{
-        float: none;
-        width: 100%;
-        max-width: 920px;
-        height:100%;
+    .aboutdiv{flex-direction: column;}
+    .aboutimgw{display: none;
     }
+    .aboutimgm{
+        display: block;
+    }
+    .aboutimgm img{
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        margin-bottom: -3px;
+    }
+}
+.prefeimg{
+    height: 100%;
+    max-height: 800px;
+    margin-bottom: -3px;
+}
+.prefeimg img{
+    height: 100%;
+    max-height: 700px;
+    width: 50vw;
+    object-fit: cover;
 }
 .preferencecontainer{
     display: flex;
@@ -412,6 +441,9 @@ swiper-container{
     gap: 32px;
     max-width: 490px;
     margin: auto;
+}
+.prefeinfo{
+    padding: 50px 0;
 }
 .prefegrid{
     display: flex;
@@ -444,12 +476,8 @@ swiper-container{
 }
 .prefeimgm{display: none;}
 @media screen and (max-width:1290px) {
-    .prefeimg img{
-        width: 590px;
-        height:590px;
-    }
     .prefeinfo{
-        padding-right: 80px;
+        padding: 0 80px 0 0;
         gap: 24px;
     }
     .preference{
@@ -510,6 +538,7 @@ swiper-container{
         width: 100%;
         max-width: 920px;
         height:100%;
+        margin-bottom: -3px;
     }
 }
 .portifoliocontainer{
@@ -573,7 +602,7 @@ swiper-container{
     .portfoliogrid{
         gap: 32px;
         justify-content: center;
-        padding: 80px 50px;
+        padding: 80px 20px;
     }
     .bigimg img{
         width: 100%;
