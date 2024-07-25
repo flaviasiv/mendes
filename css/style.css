@@ -1039,6 +1039,9 @@ a{
 .btnservice:hover, form button:hover{
 background-color: #46E5D8;
 }
-.btn1:hover, .callpopup:hover{
+.btn1:hover{
     background-color: #FFF;
+}
+.callpopup:hover{
+    background: #FFF;
 }

@@ -233,7 +233,7 @@ position: absolute;
     transform: translate(0px , 1px)rotate(-45deg);
   }
   .menu-links{
-    background-color:#0B2749;
+    background: linear-gradient(263deg, #27847C 0%, #1F455B 99.33%);
     flex-direction: column;
     align-items:center;
     margin-top: 60px;
