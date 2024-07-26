@@ -317,14 +317,15 @@ swiper-container{
 }
 .aboutimgw{
     height: 100%;
-    max-height: 800px;
-    right: 0;
+    max-height: 600px;
+    width: 50vw;
     margin-bottom: -3px;
 }
 .aboutimgw img{
     height: 100%;
     max-height: 600px;
     width: 50vw;
+    padding-left: 12px;
     object-fit: cover;
 }
 .aboutinfos{
@@ -418,13 +419,14 @@ swiper-container{
 }
 .prefeimg{
     height: 100%;
-    max-height: 800px;
+    max-height: 700px;
     margin-bottom: -3px;
 }
 .prefeimg img{
     height: 100%;
     max-height: 700px;
     width: 50vw;
+    padding-right: 13px;
     object-fit: cover;
 }
 .preferencecontainer{
