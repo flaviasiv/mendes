@@ -687,6 +687,12 @@ swiper-container{
     font-weight: 600;
     line-height: 150%;
 }
+/* tamanho menor devido a quantidade de reviews (2) */
+.reviewgrid{
+    max-width: 800px;
+    margin: auto;
+    padding: 30px 0 0;
+}
 /* IG CONTAINER */
 .ig-embed{
     position: relative;
@@ -924,7 +930,7 @@ line-height: 150%;
     font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 80%
 }
 .listareas{
@@ -938,7 +944,6 @@ line-height: 150%;
     gap: 36px;
     text-align: left;
     margin-top: 32px;
-    padding-left: 45px;
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
@@ -977,7 +982,11 @@ line-height: 150%;
     font-size: 14px;
     }
     .listareas{
-        padding: 0 10px;
+        padding: 0;
+        gap: 16px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
     }
 }
 .popuptest{
