@@ -424,7 +424,8 @@ swiper-container{
 .prefeimg img{
     height: 100%;
     width: 50vw;
-    padding-right: 8px;
+    padding: 55px;
+    border-radius: 104px;
     object-fit: cover;
 }
 .preferencecontainer{
