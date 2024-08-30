@@ -136,7 +136,7 @@ footer{
 .rights{
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 120px;
     width: 100%;
     max-width: 9990px;
@@ -146,15 +146,7 @@ footer{
     text-align: center;    
     border-top: 1px solid #fff;
 }
-.rights ul{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-.rights ul li a{
-    color: #fff;
-}
-.rights p, .rights ul li{
+.rights p{
     color: #fff;
     font-size: 14.4px;
     font-weight: 300;

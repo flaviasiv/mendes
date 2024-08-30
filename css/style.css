@@ -540,7 +540,8 @@ swiper-container{
         max-width: 920px;
         height:100%;
         margin-bottom: -1px;
-        padding-right: 0;
+        border-radius: 50px  50px 0 0;
+        padding: 0;
     }
 }
 .portifoliocontainer{
@@ -1011,7 +1012,7 @@ line-height: 150%;
     text-align: center;
     z-index: 1;
     gap: 32px;
-    padding: 200px 0 32px 0;
+    padding: 120px 0 32px 0;
     color: #fff;
 }
 .popupimg{
