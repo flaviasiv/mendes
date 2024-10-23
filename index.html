@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Mendes Cleaning Solutions - Experience exceptional cleaning services!</title>
     <link rel="icon" type="image/x-icon" href="./assets/icon.png">
     <meta name="author" content="Flavia Sigoli"/>
@@ -118,7 +119,8 @@
             </div>
             <div class="services">
                 <div class="servicesgrid">                  
-                  <swiper-container class="mySwiper1 reveal" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="5000" centered-slides="true" >
+                  <swiper-container class="mySwiper1" data-aos="fade-in"
+            data-aos-easing="ease-in-out" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="5000" centered-slides="true" >
                     <swiper-slide class="swiper1">
                       <div class="servicescard">
                         <div class="sercardinfo">
@@ -218,16 +220,19 @@
                     <p>Mendes Cleaning has been exceeding expectations and transforming spaces for over twenty years. Based in Ohio, our passion for cleanliness and commitment to excellence shine through in every service we provide. Our team works meticulously Monday through Saturday to ensure that every space we touch receives attention to detail. You can trust Mendes Cleaning to bring cleanliness and clarity to your world!</p>
                 </div>
             </div>
-                <div class="aboutimg aboutimgm reveal">
+                <div class="aboutimg aboutimgm" data-aos="fade-in"
+            data-aos-easing="ease-in-out">
                     <img src="./assets/aboutimg.png" alt="">
                 </div>
-                <div class="aboutimg aboutimgw reveal">
+                <div class="aboutimg aboutimgw" data-aos="fade-in"
+            data-aos-easing="ease-in-out">
                     <img src="./assets/aboutimg.png" alt="">
                 </div>
           </div>
         </div>
         <div class="preferencecontainer container">
-          <div class="prefeimg prefeimgw reveal"><img src="./assets/prefimg.png" alt=""></div>
+          <div class="prefeimg prefeimgw" data-aos="fade-in"
+            data-aos-easing="ease-in-out"><img src="./assets/prefimg.png" alt=""></div>
           <div class="prefeinfo reveal revealtext">
             <div class="preference">
               <h2>Why choose us?</h2>
@@ -306,7 +311,7 @@
             <h2>Experience Our Cleaning <span style="color:#46E5D8;">Excellence</span></h2>
             <p>Discover a Gallery Highlighting Impeccable Services for Your Home or Business. Witness the Difference We Can Make!</p>
           </div>
-          <div class="portfoliogrid portfoliogridm reveal">
+          <div class="portfoliogrid portfoliogridm">
             <swiper-container class="mySwiper2" space-between="10" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="3500" centered-slides="true">
                 <swiper-slide class="swiper2">
                     <img src="./assets/portsm1.png" alt="" draggable="false">
@@ -340,7 +345,7 @@
                 </swiper-slide>
             </swiper-container>
           </div>
-          <div class="portfoliogrid portfoliogridw reveal">
+          <div class="portfoliogrid portfoliogridw">
             <div class="bigimg"><img src="./assets/portbig1.png" alt=""></div>
             <div class="smallimg">
               <img src="./assets/portsm1.png" alt="">
@@ -359,7 +364,8 @@
             <div class="reviewgrid">
               <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
               <div class="elfsight-app-9e848d18-baf8-451a-ad5c-867073659c39" data-elfsight-app-lazy></div>
-                <!-- <swiper-container class="mySwiper2 reveal" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="4500" centered-slides="true">
+                <!-- <swiper-container class="mySwiper2" data-aos="fade-in"
+            data-aos-easing="ease-in-out" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="4500" centered-slides="true">
                     <swiper-slide class="swiper2">
                         <div class="reviewcard">
                             <img src="./assets/reviewimg.png" alt="" draggable="false">
@@ -514,7 +520,8 @@
     <footer class="bg-blue-rev">
         <div class="footergrid">
           <div class="footerimglogo">
-            <img src="./assets/logo-f.png" class="reveal" alt="Mendes logo" draggable="false">
+            <img src="./assets/logo-f.png" class=" data-aos="fade-in"
+            data-aos-easing="ease-in-out" alt="Mendes logo" draggable="false">
           </div>
           <div class="footermenu">
               <div class="footernav">
@@ -571,6 +578,10 @@
       <script src="./js/javascript.js"></script>
       <script src="./js/swiper-bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
   <!-- Marcação JSON-LD gerada pelo Assistente de marcação para dados estruturados do Google. -->
   <script type="application/ld+json">
