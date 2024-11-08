@@ -111,15 +111,21 @@ header {
     cursor: pointer;
     align-items: center;
 }
+.menusocial ul svg circle{
+  stroke: #46E5D8;
+}
 .menusocial ul a svg{
   clip-path: #0B2749;
 }
 /* .menusocial ul a svg circle{
 } */
+ .menusocial ul svg:hover circle{
+  stroke: #0B2749;
+ }
 .btnsocials:hover svg{
-  background: linear-gradient(263deg, #27847C 0%, #1F455B 99.33%);
+  background: #1f455b;
   border-radius: 100%;
-  transition: 0s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .callnow{
   border-radius: 100px;
@@ -141,8 +147,9 @@ header {
   margin: auto;
 }
 .callnow:hover{
-  background: linear-gradient(263deg, #27847C 0%, #1F455B 99.33%);
-  transition: 0.2s ease-in-out;
+  border: 1px solid #1f455b;
+  background: #1f455b;
+  transition: 0.1s ease-in-out;
 }
 .btn-toggle{display: none;}
 .logo-m{

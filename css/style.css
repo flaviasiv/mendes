@@ -264,9 +264,6 @@ swiper-container{
     gap: 5px;
     border: 1px solid #1F455B;
 }
-.btncardserv svg{
-    fill: #1F455B;
-}
 .swiper1 img {
   position: absolute;
   width: 100% !important;
@@ -1083,11 +1080,23 @@ a{
     color: inherit;
 }
 .btnservice:hover, form button:hover{
-background-color: #46E5D8;
+background-color: #0B2749;
+color: white;
 }
 .btn1:hover{
-    background: #46E5D8;
+    background: #0B2749;
+    color: white;
 }
 .callpopup:hover{
     background: #FFF;
+}
+.btncardserv:hover svg{
+    fill: #fff;
+}
+.hoverefect:hover{
+    transform: scale(1.05);    
+    transition: 0.2s ease-in-out;
+}
+.prefecard.hoverefect:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
