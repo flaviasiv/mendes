@@ -166,7 +166,7 @@ footer{
         padding: 0px;
     }
     .footerimglogo img{
-        margin: 0;
+        margin: auto;
         margin-top: 20px;
     }
     .footerimglogo ul{
@@ -189,30 +189,34 @@ footer{
         justify-content: center;
         width: auto;
         margin: 0;
-        text-align: left;
+        text-align: center;
         margin-bottom: 36px;
     }
     .address {
         margin-top:60px;
     }
+    .address ul li{
+        text-align: center;
+        margin: auto;
+    }
     .opentime{
         margin-top: 0;
-        text-align: left;
+        text-align: center;
     }
     .address h3 {
-        text-align: left;
+        text-align: center;
     }
     .rights{
         flex-direction: column;
         padding: 40px 10px;
         justify-content: space-between;
-        height: 170px;
+        height: 100px;
         align-items: baseline;
-        text-align: left;    
     }
     .rights p{
         font-size: 12px;
         margin-bottom: 10px;
+        margin: auto;
     }
     .rights ul{
         display: flex;
