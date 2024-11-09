@@ -170,7 +170,7 @@ swiper-container{
     flex-direction: column;
     gap: 32px;
     width: 100%;
-    max-width: 900px;
+    max-width: 500px;
     margin: auto;
     top: 25%;
     left: 50%;
@@ -198,7 +198,6 @@ swiper-container{
     line-height: 80%;
 }
 .servicestitle h2{
-    font-size: 56px;
     font-weight: 700;
     line-height: 120%; 
 }
@@ -344,7 +343,6 @@ swiper-container{
     line-height: 150%;
 }
 .aboutinfos h2{
-    font-size: 56px;
     font-weight: 700;
     line-height: 120%;
 }
@@ -415,14 +413,19 @@ swiper-container{
     }
 }
 .prefeimg{
+    display: flex;
+    width: 50vw;
+    align-items: end;
+    justify-content: right;
     height: 100%;
+    padding-right: 8vw;
     margin-bottom: -3px;
 }
 .prefeimg img{
     height: 100%;
     width: 50vw;
-    padding: 55px;
-    border-radius: 104px;
+    max-width: 500px;
+    border-radius:16px;
     object-fit: cover;
 }
 .preferencecontainer{
@@ -555,6 +558,7 @@ swiper-container{
     height: 1100px;
 }
 .portfoliotitle{
+    max-width: 400px;
     position: absolute;
     z-index: 99;
     top: 20%;
@@ -750,7 +754,7 @@ swiper-container{
     background-position: 100%;
     background-size: cover;
     /* background-size: 100%; */
-    padding: 230px 50px;
+    padding: 100px 50px;
 }
 .form{
     display: flex;
@@ -758,7 +762,7 @@ swiper-container{
     text-align: center;
     align-items: center;
     width: 100%;
-    max-width: 1099px;
+    max-width:999px;
     margin: auto;
 }
 .formp{
@@ -773,16 +777,15 @@ swiper-container{
 }
 .formp h2{
     width: 270px;    
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 600;
     line-height: 120%
 }
 .formp p{
-    width: 270px;    
-    font-size: 16px;
+    width: 280px;    
+    font-size: 18px;
     font-weight: 400;
     line-height: 150%;
-    padding-top: 14px;
 }
 .formp img{
     color: #fff;
@@ -1026,24 +1029,6 @@ line-height: 150%;
 .callpopup a{
     color: #1F455B;
 }
-/*.content1 .popupimg{
-    object-position: 0px 50%;
-}
-.content2 .popupimg{
-    object-position: 0px 50%;
-}
-.content3 .popupimg{
-    object-position: 0px 70%;
-}
-.content4 .popupimg{
-    object-position: 0px 60%;
-}
- .content5 .popupimg{
-    object-position: 0px 50%;
-} 
-.content6 .popupimg{
-    object-position: 0px 50%;
-}*/
 .popup .content h1{
     font-size: 56px;
     font-weight: 600;
@@ -1074,7 +1059,9 @@ line-height: 150%;
         padding: 0;
     }
 }
-
+.h2{
+    font-size: 40px;
+}
 a{
     text-decoration: none;
     color: inherit;

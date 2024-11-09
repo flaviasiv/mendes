@@ -82,9 +82,7 @@ header {
     letter-spacing:1px
 }
 .menu-linksbtn a:hover{
-    background: linear-gradient(90deg, #8E8E8E 0%, #fff 50%, #fff 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: #0B2749;
     transition: 0.2s ease-in-out;
 }
 .menusocial{

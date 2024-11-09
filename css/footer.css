@@ -82,9 +82,15 @@ footer{
     font-weight: 600;
     line-height: 150%;
 }
-.footernav ul li a:hover {
-    /* color: #000; */
+.footernav ul li a:hover, .address ul li a:hover{
+    color: #0B2749;
     transition: 0.2s;
+}
+.address a svg{
+    fill: #fff;
+}
+.address a:hover svg{
+    fill: #0B2749;
 }
 .address{
     width: 100%;
