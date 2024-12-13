@@ -142,7 +142,7 @@ footer{
 .rights{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 120px;
     width: 100%;
     max-width: 9990px;
@@ -152,9 +152,16 @@ footer{
     text-align: center;    
     border-top: 1px solid #fff;
 }
+.rights ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 14px;
+    text-decoration: underline;
+}
 .rights p{
     color: #fff;
-    font-size: 14.4px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 150%;
 }
@@ -208,9 +215,10 @@ footer{
     }
     .rights{
         flex-direction: column;
-        padding: 40px 10px;
+        padding: 20px 10px 40px 10px;
+        gap: 10px;
         justify-content: space-between;
-        height: 100px;
+        height: 110px;
         align-items: baseline;
     }
     .rights p{
@@ -222,7 +230,9 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 5px;
-        list-style: none;
+        text-align: center;
+        font-size: 12px;
+        margin: auto;
     }
     .rights ul li a{
         color: #fff;
